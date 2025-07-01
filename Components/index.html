@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payconnect Design System Starter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#1D6498',
+              'primary-hover': '#194D72',
+              'primary-focus': '#C4E0F3'
+            },
+            borderRadius: {
+              btn: '8px'
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 text-gray-900 min-h-screen">
+    <header class="border-b px-6 py-4 mb-6 bg-white shadow-sm">
+        <h1 class="text-3xl font-bold text-primary">Payconnect Design System Starter</h1>
+        <p class="text-gray-600 mt-1">
+            Use this site to check and reference the Payconnect design system.<br>
+            It can be used as a foundation for Payconnect projects and UI consistency.
+        </p>
+    </header>
+    <main class="max-w-4xl mx-auto px-4">
+        <section>
+            <h2 class="text-xl font-semibold mb-4">Introduction</h2>
+            <p class="mb-6">
+                This is the base setup for a design system using <a href="https://tailwindcss.com/" class="text-primary underline">Tailwind CSS</a>.  
+                The primary color theme is <span class="font-semibold text-primary">#194D72</span>.
+            </p>
+        </section>
+        <section class="mt-10">
+            <h2 class="text-xl font-semibold mb-4">Buttons</h2>
+            <p class="mb-6">
+                Buttons are a core part of the Payconnect design system.
+            </p>
+            <div class="mb-4">
+                <span class="font-semibold">Sizes:</span>
+            </div>
+            <div class="flex flex-row gap-3 items-end mb-8">
+                <button class="btn btn-primary btn-sm">Primary Small</button>
+                <button class="btn btn-primary btn-md">Primary Medium</button>
+                <button class="btn btn-primary btn-lg">Primary Large</button>
+                <button class="btn btn-primary btn-xl">Primary XL</button>
+                <button class="btn btn-primary btn-2xl">Primary 2XL</button>
+            </div>
+            <div class="flex flex-wrap gap-4 items-center">
+                <button class="btn btn-primary btn-md">Primary</button>
+                <button class="btn btn-secondary btn-md">Secondary</button>
+                <button class="btn btn-tertiary btn-md">Tertiary</button>
+                <button class="btn btn-link btn-md">Link</button>
+                <button class="btn btn-danger btn-md">Destructive</button>
+            </div>
+        </section>
+        <section class="mt-10">
+          <h2 class="text-xl font-semibold mb-4">Badges</h2>
+          <p class="mb-6">
+            Badges are used to highlight status or count information.
+          </p>
+          <div class="mb-4">
+            <span class="font-semibold">Sizes:</span>
+          </div>
+          <div class="flex flex-row gap-3 items-end mb-8">
+            <span class="badge badge-primary badge-sm">Small</span>
+            <span class="badge badge-primary badge-md">Medium</span>
+            <span class="badge badge-primary badge-lg">Large</span>
+          </div>
+          <div class="mb-4">
+            <span class="font-semibold">Colors:</span>
+          </div>
+          <div class="flex flex-wrap gap-4 items-center">
+            <span class="badge badge-primary badge-md">Primary</span>
+            <span class="badge badge-gray badge-md">Gray</span>
+            <span class="badge badge-error badge-md">Error</span>
+            <span class="badge badge-warning badge-md">Warning</span>
+            <span class="badge badge-success badge-md">Success</span>
+            <span class="badge badge-blue badge-md">Blue</span>
+          </div>
+        </section>
+        <section class="mt-10">
+          <h2 class="text-xl font-semibold mb-4">Inputs</h2>
+          <p class="mb-6">
+            Inputs are essential for forms and data entry. Below are examples with different states.
+          </p>
+          <div class="mb-4">
+            <input type="text" placeholder="Enter your name" />
+          </div>
+          <div class="mb-4">
+            <input type="text" placeholder="Focused input" value="Focused value" autofocus />
+          </div>
+          <div class="mb-4">
+            <input type="text" placeholder="Disabled input" disabled />
+          </div>
+          <div class="mb-4">
+            <input type="text" placeholder="Error state" value="Invalid value" class="input-error" />
+            <span class="text-red-500 text-sm mt-1 block">This field is required.</span>
+          </div>
+          <div class="mb-4">
+            <input type="text" placeholder="Success state" value="Looks good!" class="input-success" />
+            <span class="text-green-600 text-sm mt-1 block">Looks good!</span>
+          </div>
+        </section>
+    </main>
+</body>
+</html>
